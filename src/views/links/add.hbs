@@ -1,0 +1,42 @@
+{{!-- codigo de ADD y el head con footer los colocara main.hbs --}}
+
+{{!-- Container con padding 4 --}}
+<div class="container p-4">
+    {{!-- Row de BS4 --}}
+    <div class="row">
+        {{!-- Usara 4 columnas automatico en eje x --}}
+        <div class="col-md-4 mx-auto">
+            {{!-- Usara Card como clase --}}
+            <div class="card">
+                {{!-- El Card Body de la Card --}}
+                <div class="card-body">
+                    {{!-- Estructura del Formulario la accion y el metodo, indicando ruta del servidor
+                          a utilizar /links/add y metodo POST por defecto form usa GET --}}
+                    <form action="/links/add" method="POST">
+                        {{!-- Formgroup 1 tipo Text --}}
+                        <div class="form-group">
+                            <input type="text" name="title" class="form-control" placeholder="Title" autofocus>
+                        </div>
+                        {{!-- Formgroup 2 tipo Url --}}
+                        <div class="form-group">
+                            <input type="url" name="url" class="form-control" placeholder="URL">
+                        </div>
+                        {{!-- Formgroup 3 tipo Text --}}
+                        <div class="form-group">
+                            <textarea name="description" rows="2" class="form-control" placeholder="Description"></textarea>
+                        </div>
+                        {{!-- Formgroup 4 tipo Boton Submit --}}
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Save
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
