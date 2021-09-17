@@ -1,11 +1,8 @@
-# Notes App with Nodejs and Mysql
-![](docs/screenshot2.png)
-![](docs/screenshot.png)
+# Notes App con Nodejs and Mysql
+Aplicacion que usa Npm para instalar dependencias del proyecto y dependencias del desarrollo pueden verse en el package.json
 
 ## File Structure
-- database, it the folder with all the sql queries, you can use to recreate the database for this application
-- src, it's all the code for the Backend and Frontend Application
-- docs
+- Database, es la carpeta que contiene todas las sql queries, para recrear la db de la aplicacion
+- Src, contiene todo el codigo Backend (carpetas lib, routes) and Frontend (carpeta views todo el codigo plantillas Handlebars, carpeta Public con Imagenes y Css) de la Aplicacion
 
-## Tutorial
-- [Youtube Tutorial](https://youtu.be/qJ5R9WTW0_E)
+
